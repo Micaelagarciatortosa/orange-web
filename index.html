@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Agencia Orange: soluciones creativas en marketing digital para hacer crecer tu negocio.">
+    <title>Agencia Orange - Marketing que hace crecer tu negocio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<div class="social-links">
+  <a href="https://instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://facebook.com/tuusuario" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://tiktok.com/@tuusuario" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+    <!-- HEADER -->
+   <header>
+  <img src="ORANGE__ATR__4_-removebg-preview (1).png" alt="Logo de Agencia Orange" class="logo" />
+
+  <nav>
+  <div class="dropdown">
+  <span class="dropbtn" onclick="toggleServicios()">Servicios ▾</span>
+  <div id="menuServicios" class="dropdown-content">
+    <a href="publicidad-en-redes.html">Publicidad en redes</a>
+    <a href="diseno-grafico.html">Diseño gráfico</a>
+    <a href="email-marketing.html">Email marketing</a>
+    <a href="seo-sem.html">SEO y SEM</a>
+  </div>
+</div>
+
+  <a href="#contacto">Contacto</a>
+  <a href="quienes-somos.html" class="boton-quienes">¿Quiénes somos?</a>
+</nav>
+
+</header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Marketing que hace crecer tu negocio</h1>
+        <p>Somos la agencia que impulsa marcas con creatividad y estrategia digital.</p>
+        <button class="btn-primary">Conócenos</button>
+        <button class="btn-secondary">Nuestros servicios</button>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us">
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Ofrecemos soluciones a medida para cada negocio con resultados tangibles.</p>
+        <div class="features">
+            <div class="feature-item">Estrategia personalizada</div>
+            <div class="feature-item">Creatividad profesional</div>
+            <div class="feature-item">Resultados medibles</div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+   <section class="servicios">
+  <h2>Servicios</h2>
+
+  <div class="servicios-grid">
+    <button class="servicio-btn" onclick="mostrarInfo('redes')">Publicidad en redes</button>
+    <button class="servicio-btn" onclick="mostrarInfo('diseno')">Diseño gráfico</button>
+    <button class="servicio-btn" onclick="mostrarInfo('email')">Email marketing</button>
+    <button class="servicio-btn" onclick="mostrarInfo('seo')">SEO y SEM</button>
+  </div>
+
+  <div class="servicio-info-container">
+    <div id="info-redes" class="servicio-info oculto">
+      <p>📱 Gestionamos campañas efectivas en redes sociales como Instagram, Facebook y TikTok.</p>
+    </div>
+    <div id="info-diseno" class="servicio-info oculto">
+      <p>🎨 Creamos diseños atractivos, profesionales y coherentes con tu marca.</p>
+    </div>
+    <div id="info-email" class="servicio-info oculto">
+      <p>✉️ Automatizamos correos para fidelizar clientes y aumentar tus ventas.</p>
+    </div>
+    <div id="info-seo" class="servicio-info oculto">
+      <p>🔍 Posicionamos tu negocio en Google con SEO y campañas de anuncios SEM.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonial-item">
+            “Gracias a Orange duplicamos nuestras ventas en 3 meses.”
+            <div class="testimonial-author">— Ana Rodríguez, CEO de EcoShop</div>
+        </div>
+        <div class="testimonial-item">
+            “El equipo es cercano, creativo y muy profesional.”
+            <div class="testimonial-author">— Mario Díaz, Fundador de Café Nube</div>
+        </div>
+    </section>
+ /*
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section" id="contacto">
+  <h2>Contáctanos</h2>
+  <form action="https://formsubmit.co/mkt.orangeagency@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <input type="number" name="numero" placeholder="Tu numero de celular" required>
+    <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+
+    <!--google partner-->
+<section class="google-partner">
+  <div class="partner-container">
+    <img src="1204.jpg" alt="Google Partner" class="partner-logo" />
+    <div class="partner-text">
+      <h2>¡Somos Google Partner!</h2>
+      <h3>Al trabajar con nosotros también estás trabajando con Google</h3>
+      <p>
+        Google es el que valida el conocimiento experto y seguimiento de las buenas prácticas
+        en la ejecución de campañas dentro de su plataforma. Con esta insignia 
+        <strong>certificamos nuestro conocimiento</strong> de la plataforma publicitaria de Google
+        y garantizamos la calidad en el servicio que te ofrecemos.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 Agencia Orange. Todos los derechos reservados.
+        <br />
+        <a href="mailto:mkt.orangeagency@gmail.com">mkt.orangeagency@gmail.com</a>
+    </footer>
+    <!--servivio-->
+<script>
+  function mostrarInfo(servicio) {
+    const secciones = document.querySelectorAll('.servicio-info');
+    secciones.forEach(sec => sec.classList.remove('visible'));
+
+    const mostrar = document.getElementById(`info-${servicio}`);
+    if (mostrar) {
+      mostrar.classList.add('visible');
+      document.querySelector('.servicio-info-container').style.display = 'block';
+    }
+  }
+</script>
+
+<!--desplegable menu-->
+<script>
+  function toggleServicios() {
+    document.getElementById("menuServicios").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      const dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+
+</body>
+
+</html>
